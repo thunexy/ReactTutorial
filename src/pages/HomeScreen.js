@@ -35,7 +35,7 @@ class HomeScreen extends Component {
                 <PlaceDetail selectedPlace={this.props.selectedPlace} onItemDeleted={this.placeDeletedHandler} onModalClosed={this.modalClosedHandler}/>
                 <PlaceInput onPlaceAdded={this.placeAddedHandler}/>
                 <PlaceList places={this.props.places} onItemSelected={this.placeSelectedHandler}/>
-                <Button title="Press Me now" color="green" onPress={()=>this.props.navigation.navigate("Other")} />
+                <Button title="Press Me now" color="green" onPress={()=>this.props.navigation.navigate("Home")} />
 
             </View>
         );

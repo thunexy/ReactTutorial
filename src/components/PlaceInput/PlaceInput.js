@@ -24,8 +24,7 @@ class PlaceInput extends Component {
     render() {
         return (
             <View style={styles.inputContainer}>
-                <TextInput style={styles.placeInput} value={this.state.placeName}
-                           onChangeText={this.placeNameChangedHandler}/>
+                <TextInput style={styles.placeInput} value={this.state.placeName} onChangeText={this.placeNameChangedHandler}/>
                 <Button style={styles.placeButton} onPress={this.placeSubmitHandler} title="Add"/>
             </View>
         )

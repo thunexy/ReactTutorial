@@ -37,7 +37,7 @@ class OtherScreen extends Component {
                              onModalClosed={this.modalClosedHandler}/>
                 <PlaceInput onPlaceAdded={this.placeAddedHandler}/>
                 <PlaceList places={this.props.places} onItemSelected={this.placeSelectedHandler}/>
-                <Button title="Go to new Screen" color="red" onPress={() => this.props.navigation.push("Home")}/>
+                <Button title="Go to new Screen" color="red" onPress={() => this.props.navigation.navigate("Home")}/>
             </View>
         );
     }
