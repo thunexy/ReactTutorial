@@ -3,10 +3,10 @@ import {StyleSheet, View, Image, Text, TouchableOpacity, Linking} from 'react-na
 import Logo from "./../assets/logo.png";
 import Icon from 'react-native-vector-icons/Ionicons';
 import Footer from './../components/Sections/footer';
+import {URLS} from "./index";
 
 
 class Home extends Component {
-
 
     render() {
         return (
@@ -34,7 +34,7 @@ class Home extends Component {
                             </TouchableOpacity>
                         </View>
                         <View style={{width: "100%", flexDirection: "row", justifyContent: "space-between"}}>
-                            <TouchableOpacity style={styles.actionButton} onPress={()=>{Linking.openURL("http://www.tranzfar.com/faqs")}}>
+                            <TouchableOpacity style={styles.actionButton} onPress={()=>{Linking.openURL(URLS.faqs)}}>
                                 <Icon color="#1f6a7a" size={30} name="md-information-circle"/>
                                 <Text>FAQ</Text>
                             </TouchableOpacity>

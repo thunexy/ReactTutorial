@@ -29,15 +29,14 @@ export default class App extends Component {
 const DrawerStack = createDrawerNavigator({
     Home: {screen: Home},
     Estimate: {screen: createStackNavigator({Estimate})},
-    Signup: {screen: createStackNavigator({Signup, Login, PasswordRecovery})},
-    Login: {screen: createStackNavigator({Login, Signup, PasswordRecovery})},
+    Signup: {screen: createStackNavigator({Signup})},
+    Login: {screen: createStackNavigator({Login, PasswordRecovery})},
 
 }, {initialRouteName: "Home", contentComponent: DrawerNavigator});
 
 const RootStack = createStackNavigator({
         DrawerStack: {screen: DrawerStack},
-        PasswordRecovery: {screen: PasswordRecovery},
-        Melissa: {screen: Melissa},
+        Melissa,
         },
     {
         initialRouteName: 'DrawerStack',

@@ -5,11 +5,11 @@ const footer = () => {
     return (
         <View>
             <View style={styles.termsContainer}>
-                <TouchableOpacity onPress={()=> Linking.openURL('http://www.tranzfar.com/terms-of-use')}><Text style={styles.termsStyle}>Terms of Use</Text></TouchableOpacity>
+                <TouchableOpacity onPress={()=> Linking.openURL(URL.terms)}><Text style={styles.termsStyle}>Terms of Use</Text></TouchableOpacity>
                 <Text style={styles.termsStyle}> | </Text>
-                <TouchableOpacity onPress={()=> Linking.openURL('http://www.tranzfar.com/privacy-policy')}><Text style={styles.termsStyle}>Privacy Policy</Text></TouchableOpacity>
+                <TouchableOpacity onPress={()=> Linking.openURL(URL.policy)}><Text style={styles.termsStyle}>Privacy Policy</Text></TouchableOpacity>
                 <Text style={styles.termsStyle}> | </Text>
-                <TouchableOpacity onPress={()=> Linking.openURL('http://www.tranzfar.com/terms-and-conditions')}><Text style={styles.termsStyle}>Terms & Conditions</Text></TouchableOpacity>
+                <TouchableOpacity onPress={()=> Linking.openURL(URL.conditions)}><Text style={styles.termsStyle}>Terms & Conditions</Text></TouchableOpacity>
             </View>
             <View style={{flexDirection: "row", justifyContent: "center"}}>
                 <Text style={styles.footNote}>Tranzfar is registered by the Financial Conduct Authority

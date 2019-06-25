@@ -12,4 +12,4 @@ const RNRedux = () => (
     </Provider>
 );
 
-AppRegistry.registerComponent('ReactTutorial', () => RNRedux);
+AppRegistry.registerComponent('Tranzfar', () => RNRedux);

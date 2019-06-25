@@ -1,4 +1,4 @@
-package com.reacttutorial;
+package com.tranzfar;
 
 import android.app.Application;
 
